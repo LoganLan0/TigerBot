@@ -9,7 +9,7 @@ from infer_stream import get_model
 
 os.environ["TOKENIZERS_PARALLELISM"] = "false"
 max_generate_length: int = 1024
-model_path = "tigerbot-7b-sft"
+model_path = "tigerbot-7b-sft-4bit-128g"
 print(f"loading model: {model_path}...")
 model = get_model(model_path)
 from infer_stream import stream_chat
